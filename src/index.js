@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { CometChat } from '@cometchat-pro/chat';
-    
+
 CometChat.init(process.env.REACT_APP_COMETCHAT_APPID)
   .then(() => {
     console.log('Initialised CometChat');
@@ -11,4 +11,4 @@ CometChat.init(process.env.REACT_APP_COMETCHAT_APPID)
     console.log('Failed to Initialise CometChat');
   });
 
-ReactDOM.render(, document.getElementById('root')); 
+ReactDOM.render(document.getElementById('root')); 
